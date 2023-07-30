@@ -13,10 +13,10 @@ git clone https://github.com/amrmrp/kerakend-example.git
 Then, you can run the application using the following command:
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 
-You can then access the application via a web browser at `http://localhost:8000`.
+You can then access the application via a web browser at `http://localhost:8080/fakeApi`.
 
 ## Services
 
