@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  krakend:
+    container_name: krakend
+    image: devopsfaith/krakend:latest
+    command: run -d -c /etc/krakend/krakend.json
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./kerakend:/etc/krakend   
+
+volumes:
+  laravel-mysql:
+    driver: local

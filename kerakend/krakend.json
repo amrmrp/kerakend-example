@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "name": "amrmrp gateway :)",
+  "port": 8080,
+  "cache_ttl": "3600s",
+  "timeout": "3s",
+  "endpoints": [
+      {
+          "endpoint": "/fakeApi",
+          "method": "GET",
+          "backend": [
+              {
+                  "host": [
+                      "https://jsonplaceholder.typicode.com/todos/1"
+                  ],
+                  "url_pattern": "/", 
+                  "disable_host_sanitize": true
+              }
+          ]
+      }
+  ]
+}
