@@ -9,7 +9,3 @@ services:
       - "8080:8080"
     volumes:
       - ./kerakend:/etc/krakend   
-
-volumes:
-  laravel-mysql:
-    driver: local
